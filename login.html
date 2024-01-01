@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="siteHeading">My E-Commerce Store</h1>
+      <nav>
+        <ul>
+          <div class="header-button">
+            <i class="material-icons"> home </i>
+            <li><a href="./index.html" class="button">Home</a></li>
+          </div>
+          <div class="header-button">
+            <i class="material-icons"> inventory </i>
+            <li><a href="#products" class="button">Products</a></li>
+          </div>
+          <div class="header-button">
+            <i class="material-icons"> info </i>
+            <li><a href="#about" class="button">About Us</a></li>
+          </div>
+          <div class="header-button">
+            <i class="material-icons"> call </i>
+            <li><a href="#contact" class="button">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+      <a href="./login.html" style="text-decoration: none; cursor: pointer">
+        <button class="loginButton">
+          <span class="material-icons"> login </span>
+          Login
+        </button>
+      </a>
+    </header>
+    <div class="container">
+      <div class="slider"></div>
+      <div class="btn">
+        <button class="login">Login</button>
+        <button class="signup">Signup</button>
+      </div>
+      <div class="form-section">
+        <div class="login-box">
+          <input
+            type="email"
+            class="email ele"
+            placeholder="youremail@email.com"
+          />
+          <input type="password" class="password ele" placeholder="password" />
+          <button class="clkbtn">Login</button>
+        </div>
+
+        <div class="signup-box">
+          <input type="text" class="name ele" placeholder="Enter your name" />
+          <input
+            type="email"
+            class="email ele"
+            placeholder="youremail@email.com"
+          />
+          <input type="password" class="password ele" placeholder="password" />
+          <input
+            type="password"
+            class="password ele"
+            placeholder="Confirm password"
+          />
+          <button class="clkbtn">Signup</button>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
