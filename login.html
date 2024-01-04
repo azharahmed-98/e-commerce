@@ -13,7 +13,7 @@
   </head>
   <body>
     <header id="header">
-      <h1 class="siteHeading">My E-Commerce Store</h1>
+      <h1 class="siteHeading">King's Dresses</h1>
       <nav>
         <ul>
           <div class="header-button">
@@ -22,20 +22,20 @@
           </div>
           <div class="header-button">
             <i class="material-icons"> inventory </i>
-            <li><a href="#products" class="button">Products</a></li>
+            <li><a href="./index.html" class="button">Products</a></li>
           </div>
           <div class="header-button">
             <i class="material-icons"> info </i>
-            <li><a href="#about" class="button">About Us</a></li>
+            <li><a href="./about.html" class="button">About Us</a></li>
           </div>
           <div class="header-button">
             <i class="material-icons"> call </i>
-            <li><a href="#contact" class="button">Contact</a></li>
+            <li><a href="./contact.html" class="button">Contact</a></li>
           </div>
         </ul>
       </nav>
       <a href="./login.html" style="text-decoration: none; cursor: pointer">
-        <button class="loginButton">
+        <button class="loginButton" id="loginButton">
           <span class="material-icons"> login </span>
           Login
         </button>
@@ -47,32 +47,58 @@
         <button class="login">Login</button>
         <button class="signup">Signup</button>
       </div>
-      <div class="form-section">
-        <div class="login-box">
-          <input
-            type="email"
-            class="email ele"
-            placeholder="youremail@email.com"
-          />
-          <input type="password" class="password ele" placeholder="password" />
-          <button class="clkbtn">Login</button>
-        </div>
-
+      <form id="loginForm">
+        <div class="form-section">
+          <div class="login-box">
+            <input
+              type="email"
+              id="loginMail"
+              class="email ele"
+              placeholder="youremail@email.com"
+              required
+            />
+            <input
+              type="password"
+              id="loginPassword"
+              class="password ele"
+              placeholder="password"
+              required
+            />
+            <button type="submit" class="clkbtn">Login</button>
+          </div>
+      </form>
+      <form id="signUpForm">
         <div class="signup-box">
-          <input type="text" class="name ele" placeholder="Enter your name" />
+          <input
+            type="text"
+            class="name ele"
+            id="regName"
+            placeholder="Enter your name"
+          />
           <input
             type="email"
+            id="regEmail"
             class="email ele"
             placeholder="youremail@email.com"
+            required
           />
-          <input type="password" class="password ele" placeholder="password" />
           <input
             type="password"
             class="password ele"
+            id="regPassword"
+            placeholder="password"
+            required
+          />
+          <input
+            type="password"
+            class="password ele"
+            id="regPasswordConfirm"
             placeholder="Confirm password"
+            required
           />
           <button class="clkbtn">Signup</button>
         </div>
+      </form>
       </div>
     </div>
     <script src="./main.js"></script>

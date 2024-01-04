@@ -11,7 +11,7 @@
   </head>
   <body>
     <header id="header">
-      <h1 class="siteHeading">My E-Commerce Store</h1>
+      <h1 class="siteHeading">King's Dresses</h1>
       <nav>
         <ul>
           <div class="header-button">
@@ -20,26 +20,26 @@
           </div>
           <div class="header-button">
             <i class="material-icons"> inventory </i>
-            <li><a href="#products" class="button">Products</a></li>
+            <li><a href="./index.html" class="button">Products</a></li>
           </div>
           <div class="header-button">
             <i class="material-icons"> info </i>
-            <li><a href="#about" class="button">About Us</a></li>
+            <li><a href="./about.html" class="button">About Us</a></li>
           </div>
           <div class="header-button">
             <i class="material-icons"> call </i>
-            <li><a href="#contact" class="button">Contact</a></li>
+            <li><a href="./contact.html" class="button">Contact</a></li>
           </div>
         </ul>
       </nav>
-      <a href="./login.html" style="text-decoration: none; cursor: pointer">
-        <button class="loginButton">
+      <a style="text-decoration: none; cursor: pointer">
+        <button class="loginButton" id="loginButton">
           <span class="material-icons"> login </span>
           Login
         </button>
       </a>
     </header>
-    <main>
+    <main class="product-info">
       <section id="categories">
         <div class="category">
           <h2>Shirts</h2>
@@ -142,36 +142,18 @@
           </div>
         </div>
       </section>
-      <section id="checkout">
-        <h2>Checkout</h2>
-        <form>
-          <input type="text" placeholder="Full Name" required />
-          <input type="text" placeholder="Address" required />
-          <input type="text" placeholder="Card Number" required />
-          <button type="submit">Place Order</button>
-        </form>
-      </section>
-
-      <section id="order-confirmation">
-        <h2>Order Placed</h2>
-        <p>Thank you for your order! Your order number is #12345.</p>
-        <p>An email confirmation has been sent to your email address.</p>
-      </section>
-
-      <section id="about">
-        <h2>About Us</h2>
-        <p>Information about the company/store.</p>
-      </section>
-
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Contact information and form.</p>
+      <section id="purchase" class="purchase">
+        <section id="checkout" class="checkout">
+          <h2>Checkout</h2>
+          <form class="checkout-form" id="checkout-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="text" placeholder="Address" required />
+            <input type="text" placeholder="Card Number" required />
+            <button type="submit">Place Order</button>
+          </form>
+        </section>
       </section>
     </main>
-
-    <footer>
-      <p>&copy; 2023 My E-Commerce Store</p>
-    </footer>
     <script src="./main.js"></script>
   </body>
 </html>

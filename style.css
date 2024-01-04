@@ -13,13 +13,19 @@ body {
   flex-direction: row;
   color: white;
   align-items: center;
-	justify-content: center;
+  justify-content: center;
   background-color: black;
 }
 
 Header > h1 {
   margin: 10px;
   margin-right: 10vw;
+}
+
+.product-info {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 100%;
 }
 
 Header > nav > ul {
@@ -124,4 +130,52 @@ li {
   align-items: center;
   margin: 0px 10px;
   cursor: pointer;
+}
+
+.about {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.about:hover {
+  box-shadow: 0 12px 16px 0 rgba(241, 229, 8, 0.24),
+    0 17px 50px 0 rgba(245, 217, 2, 0.19);
+}
+
+.contact {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.contact:hover {
+  box-shadow: 0 12px 16px 0 rgba(241, 229, 8, 0.24),
+    0 17px 50px 0 rgba(245, 217, 2, 0.19);
+}
+
+.purchase {
+  margin: 20px;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+.checkout-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
 }
